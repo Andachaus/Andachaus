@@ -1,16 +1,140 @@
-## Hi there 👋
+<!DOCTYPE html>
+<html lang="es">
 
-<!--
-**Andachaus/Andachaus** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini resumen html</title>
 
-Here are some ideas to get you started:
+    <link rel="icon" type="image/gif" href="banana.gif">
+</head>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<body>
+    <header>
+        <h1>Resumen de Algunas Cosas Aprendidas en HTML5</h1>
+        <p> Aquí voy a intentar enumerar algunos de los conceptos y cosas que he ido aprendiendo en el curso de Coursera
+            en torno al diseño web.</p>
+
+    </header>
+    <main>
+
+        <head>
+            <p>Hola, mi nombre es Andrés y a través de este ejercicio de realización de página web quiero recolectar
+                algunos de los conceptos que he ido aprendiendo en torno al desarrollo de páginas web. <br>
+                Esto es como hacer un dos en uno, pongo en práctica la teoría y también recapitulo algunos conceptos
+                clave.</p>
+        </head>
+
+        <section>
+            <h2>Camelcase</h2>
+            <p>
+                Lo primero que recuerdo es en torno al camelcase, una técnica de escritura para tener claridad en
+                nombres. <br>
+                La he usado para nombrar objetos, archivos y variables de tal forma que el nombre puede contener varias
+                palabras pero sin espacios, además, la primera palabra es en minúsculas y las otras palabras van com
+                mayusculas sostenida. <br>
+                <br>
+                Ejemplo: esteEsMiResumen
+            </p>
+        </section>
+
+        <section>
+            <h2>Consejos iniciales</h2>
+            <p>
+                Lo ideal es crear el proyecto en una carpeta, donde se pueda alojar tanto el archivo html como otros
+                archivos complementarios.Además, es necesario poder revisar siempre que el código esté bien, para eso lo
+                mejor es usar correcto en linea como puede ser <a href="https://validator.w3.org/"> Validator HTML</a>
+                <br>
+                <br>
+                También, es recomendado poder usar un editor de codigo que permita abreviar el tiempo de escritura y
+                prevenir algunos errores sintáxicos. En mi caso, me ha gustado mucho trabajar con Visual Studio Code.
+            </p>
+        </section>
+
+        <section>
+            <h2>Los 3 importantes</h2>
+            <p> Un buen código de página web debe tener siempre estos 3 aspectos: <br> </p>
+            <ol>
+                <li>Doctype</li>
+                <li>Head</li>
+                <li>Body</li>
+            </ol>
+
+
+            <h3>Doctype</h3>
+            <p>
+                Este es un tipo de protocolo que determina que tipo de archivo va a ser, en este caso se pone html <br>
+                se escribe !DOCTYPE html
+            </p>
+
+            <h3>Head</h3>
+            <p>
+                Aquí es donde va metadata, como el tipo de carácteres (UTF-8 o algo así), el titulo que aparece en la
+                pestaña del navegador y la miniatura del navegador.
+            </p>
+
+            <h3>Body</h3>
+            <p>
+                Aquí es donde iría el grueso de la página web, donde va a estar todo lo visible para el usuario, aquí
+                estará el contenido de la página.
+            </p>
+
+        </section>
+
+
+        <section>
+            <h2>Etiquetas y Atributos </h2>
+
+            <ul>
+                <li>Estas definen la estructura y tipo de código, están entre estas llaves: &lt; /&gt; </li>
+                <li>Las normales inician y terminan, ej: &lt;p&gt; &lt;p /&gt;</li>
+                <li>Otras son autoconcluyentes, ej: &lt;img &gt;</li>
+                <li>Algunas etiquetas tienen atributos, que son información adicional que va dentro de la etiqueta
+                    correspondiente</li>
+                <li> Hay simbolos que se usan para la estructura del codigo html como lo son el &lt; o &gt;, para usar
+                    estos
+                    como texto normal, es necesario llamarlos con otros nombres (& l t)</li>
+                <li>Parrafo &lt;p&gt; &lt;p/&gt;</li>
+                <li>Salto de linea &lt;br&gt; (auto concluyente)</li>
+                <li> No usar H1 o H2 por el estilo, hay que tener en cuenta la sintaxis y la semántica (en mis palabras
+                    sería tener en cuenta la jerarquía de cada etiqueta)</li>
+                <li>Existen listas ordenadas y desordenadas, y estas creo que tienen sus propios atributos</li>
+            </ul>
+
+            <a href="etiquetas.png" target="_blank">
+                <figure>
+                    <img src="etiquetas.png" width="50%" alt="etiquetas">
+                    <figcaption>Muestra de algunas etiquetas y sus posibles funciones en una página web</figcaption>
+                </figure>
+            </a>
+        </section>
+        <section>
+            <h2>Uso de Hipervinculos</h2>
+            <p>En esta sección estoy poniendo en práctica las dos formas para poner enlaces. <br>
+                Me sorprendio que si fuese necesario el uso "https://www." para hacer el link a una página como
+                Wikipedia, porque por lo general uno solo tiene que escribir wikipedia.com <br>
+                pero como lo demuestro en la parte de abajo, si no lo escribo completo el link simplemente no
+                funcionará.</p>
+
+            <a href="wikipedia.org" title="No funciona">Prueba para saber si funciona una url sin https (no
+                funciona)</a>
+            <br>
+            <br>
+            <a href="https://www.wikipedia.org" title="Este link si funciona">url completa (si funciona)</a>
+
+        </section>
+
+        <footer>
+            <address>
+                <p>Andres Chavarro, Estudiante de Artes de la Grabación y Producción Musical</p>
+                <p>2025, Bogotá Colombia</p>
+                <p>&copy; Todos los derechos reservados</p>
+            </address>
+        </footer>
+    </main>
+
+
+
+</body>
+
+</html>
